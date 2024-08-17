@@ -1,0 +1,12 @@
+service: my-lambda-service-skhussain
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+functions:
+  hello:
+    handler: src/handler.hello
+    events:
+    - http:
+        path: /
+        method: get
