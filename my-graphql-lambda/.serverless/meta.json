@@ -193,7 +193,7 @@
                         "S3Bucket": {
                           "Ref": "ServerlessDeploymentBucket"
                         },
-                        "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                        "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
                       },
                       "Handler": "handler.queryHandler",
                       "Runtime": "nodejs18.x",
@@ -218,7 +218,7 @@
                         "S3Bucket": {
                           "Ref": "ServerlessDeploymentBucket"
                         },
-                        "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                        "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
                       },
                       "Handler": "handler.mutationHandler",
                       "Runtime": "nodejs18.x",
@@ -243,7 +243,7 @@
                         "S3Bucket": {
                           "Ref": "ServerlessDeploymentBucket"
                         },
-                        "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                        "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
                       },
                       "Handler": "handler.subscriptionHandler",
                       "Runtime": "nodejs18.x",
@@ -486,7 +486,7 @@
                       "SubscriptionLambdaPermissionApiGateway"
                     ]
                   },
-                  "ApiGatewayDeployment1724018274052": {
+                  "ApiGatewayDeployment1724047187758": {
                     "Type": "AWS::ApiGateway::Deployment",
                     "Properties": {
                       "RestApiId": {
@@ -1022,7 +1022,7 @@
                   "S3Bucket": {
                     "Ref": "ServerlessDeploymentBucket"
                   },
-                  "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                  "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
                 },
                 "Handler": "handler.queryHandler",
                 "Runtime": "nodejs18.x",
@@ -1047,7 +1047,7 @@
                   "S3Bucket": {
                     "Ref": "ServerlessDeploymentBucket"
                   },
-                  "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                  "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
                 },
                 "Handler": "handler.mutationHandler",
                 "Runtime": "nodejs18.x",
@@ -1072,7 +1072,7 @@
                   "S3Bucket": {
                     "Ref": "ServerlessDeploymentBucket"
                   },
-                  "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                  "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
                 },
                 "Handler": "handler.subscriptionHandler",
                 "Runtime": "nodejs18.x",
@@ -1315,7 +1315,7 @@
                 "SubscriptionLambdaPermissionApiGateway"
               ]
             },
-            "ApiGatewayDeployment1724018274052": {
+            "ApiGatewayDeployment1724047187758": {
               "Type": "AWS::ApiGateway::Deployment",
               "Properties": {
                 "RestApiId": {
@@ -1659,7 +1659,7 @@
     "options": {},
     "error": null,
     "params": {},
-    "machineId": "b108fda9c1fa1a5c00a4b0372faa648b",
+    "machineId": "bba72f5d82c58046c8ad58e56ff85e61",
     "accessKeyV2": "<REDACTED>",
     "accessKeyV1": "<REDACTED>",
     "orgId": "cf532447-2ae2-4432-a480-4f4a56e47d7d",

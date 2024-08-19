@@ -186,7 +186,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
               },
               "Handler": "handler.queryHandler",
               "Runtime": "nodejs18.x",
@@ -211,7 +211,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
               },
               "Handler": "handler.mutationHandler",
               "Runtime": "nodejs18.x",
@@ -236,7 +236,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z/graphql-serverless.zip"
+                "S3Key": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z/graphql-serverless.zip"
               },
               "Handler": "handler.subscriptionHandler",
               "Runtime": "nodejs18.x",
@@ -479,7 +479,7 @@
               "SubscriptionLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1724018274052": {
+          "ApiGatewayDeployment1724047187758": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -836,7 +836,7 @@
     "artifact": "/workspaces/graphql-serverless-project/my-graphql-lambda/.serverless/graphql-serverless.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/graphql-serverless/dev/1724018287333-2024-08-18T21:58:07.333Z",
+    "artifactDirectoryName": "serverless/graphql-serverless/dev/1724047231355-2024-08-19T06:00:31.355Z",
     "artifact": "graphql-serverless.zip"
   }
 }
