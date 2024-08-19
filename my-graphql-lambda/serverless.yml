@@ -3,6 +3,10 @@ service: my-graphql-serverless
 provider:
   name: aws
   runtime: nodejs20.x
+  deploymentBucket:
+    name: graphql-serverless-bucket # Specify your custom S3 bucket name
+  stage: production
+  region: us-east-1 # Specify your AWS region
 
 functions:
   query:
@@ -11,6 +15,7 @@ functions:
       - http:
           path: query
           method: post
+          cors: true # Enable CORS if needed for public access
 
   mutation:
     handler: handler.mutationHandler
@@ -18,6 +23,7 @@ functions:
       - http:
           path: mutation
           method: post
+          cors: true # Enable CORS if needed for public access
 
   subscription:
     handler: handler.subscriptionHandler
@@ -25,6 +31,7 @@ functions:
       - http:
           path: subscriptions
           method: post
+          cors: true # Enable CORS if needed for public access
 
 plugins:
   - serverless-offline
