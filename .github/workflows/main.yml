@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3  # Update to the latest version
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4  # Update to the latest version
       with:
-        node-version: '18'
+        node-version: '20'  # Update to the latest Node.js version
 
     - name: Install Dependencies
       run: npm install
@@ -33,17 +33,17 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3  # Update to the latest version
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4  # Update to the latest version
       with:
-        node-version: '18'
+        node-version: '20'  # Update to the latest Node.js version
 
     - name: Deploy to AWS
       run: |
         npx serverless deploy --stage production
       working-directory: my-graphql-lambda
       env:
-        AWS_ACCESS_KEY_ID: AKIA6ODU5VWACK2HFKLO
-        AWS_SECRET_ACCESS_KEY: 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
+        AWS_ACCESS_KEY_ID: AKIA6ODU5VWACDYEJ2H2
+        AWS_SECRET_ACCESS_KEY: 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
