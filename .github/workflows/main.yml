@@ -20,11 +20,11 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
-      working-directory: graphql-serverless-project/my-graphql-lambda
+      working-directory: my-graphql-lambda
 
     - name: Run Tests
       run: npm test
-      working-directory: graphql-serverless-project/my-graphql-lambda
+      working-directory: my-graphql-lambda
 
   deploy:
     runs-on: ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
     - name: Deploy to AWS
       run: |
         npx serverless deploy --stage production
-      working-directory: graphql-serverless-project/my-graphql-lambda
+      working-directory: my-graphql-lambda
       env:
         AWS_ACCESS_KEY_ID: AKIA6ODU5VWACK2HFKLO
         AWS_SECRET_ACCESS_KEY: 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
