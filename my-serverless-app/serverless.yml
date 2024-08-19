@@ -1,0 +1,13 @@
+service: my-serverless-app
+
+provider:
+  name: aws
+  runtime: nodejs18.x # Updated runtime version
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: any

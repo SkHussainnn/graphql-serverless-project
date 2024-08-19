@@ -3,3 +3,4 @@ my-lambda-project/node_modules/*
 react-graphql-dashboard/node_modules/*
 server/node_modules/*
 graphql-server/node_modules/*
+node_modules

@@ -1,0 +1,30 @@
+service: graphql-serverless
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  query:
+    handler: handler.queryHandler
+    events:
+      - http:
+          path: query
+          method: post
+
+  mutation:
+    handler: handler.mutationHandler
+    events:
+      - http:
+          path: mutation
+          method: post
+
+  subscription:
+    handler: handler.subscriptionHandler
+    events:
+      - http:
+          path: subscriptions
+          method: post
+
+plugins:
+  - serverless-offline
