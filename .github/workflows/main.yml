@@ -22,11 +22,6 @@ jobs:
       run: npm install
       working-directory: my-graphql-lambda
 
-    # Commented out or removed test step
-    # - name: Run Tests
-    #   run: npm test
-    #   working-directory: my-graphql-lambda
-
   deploy:
     runs-on: ubuntu-latest
 
@@ -41,11 +36,18 @@ jobs:
       with:
         node-version: '20'
 
+    - name: Install Serverless Framework Globally
+      run: npm install -g serverless@4.1.22
+
+    - name: Install Dependencies
+      run: npm install
+      working-directory: my-graphql-lambda
+
     - name: Deploy to AWS
       run: |
-        npx serverless deploy --stage production
+        npx serverless deploy --stage production --debug
       working-directory: my-graphql-lambda
       env:
-        SERVERLESS_ACCESS_KEY: AKYHkKv2aPetnx3CGdfbRVMwtcrVSacUpMWtVSBfr8ekW
-        AWS_ACCESS_KEY_ID: AKIA6ODU5VWACDYEJ2H2
-        AWS_SECRET_ACCESS_KEY: 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
+        SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
