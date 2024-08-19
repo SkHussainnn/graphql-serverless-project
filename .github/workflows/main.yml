@@ -48,6 +48,6 @@ jobs:
         npx serverless deploy --stage production --debug
       working-directory: my-graphql-lambda
       env:
-        SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        SERVERLESS_ACCESS_KEY: AKYHkKv2aPetnx3CGdfbRVMwtcrVSacUpMWtVSBfr8ekW
+        AWS_ACCESS_KEY_ID: AKIA6ODU5VWACDYEJ2H2
+        AWS_SECRET_ACCESS_KEY: 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
