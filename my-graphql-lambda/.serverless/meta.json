@@ -10,7 +10,168 @@
     ],
     "options": {},
     "error": null,
-    "machineId": "6272b78430c2ea6d5c7fc5c86d3eb066",
+    "machineId": "309fbbc3b394286d137cef91f12f39bf",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  },
+  "/workspaces/graphql-serverless-project/my-graphql-lambda": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.22",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "aws": {
+        "instance": {
+          "credentials": "<REDACTED>",
+          "serviceConfigFile": {
+            "service": "my-graphql-serverless",
+            "provider": {
+              "name": "aws",
+              "runtime": "nodejs20.x",
+              "stage": "dev",
+              "region": "us-east-1",
+              "versionFunctions": true
+            },
+            "functions": {
+              "query": {
+                "handler": "handler.queryHandler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "query",
+                      "method": "post"
+                    }
+                  }
+                ],
+                "name": "my-graphql-serverless-dev-query"
+              },
+              "mutation": {
+                "handler": "handler.mutationHandler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "mutation",
+                      "method": "post"
+                    }
+                  }
+                ],
+                "name": "my-graphql-serverless-dev-mutation"
+              },
+              "subscription": {
+                "handler": "handler.subscriptionHandler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "subscriptions",
+                      "method": "post"
+                    }
+                  }
+                ],
+                "name": "my-graphql-serverless-dev-subscription"
+              }
+            },
+            "plugins": [
+              "serverless-offline"
+            ]
+          },
+          "configFileDirPath": "/workspaces/graphql-serverless-project/my-graphql-lambda",
+          "config": {
+            "type": "aws"
+          },
+          "options": {},
+          "stage": "dev",
+          "dashboard": null,
+          "isDefaultConfig": true
+        },
+        "resolvers": {}
+      }
+    },
+    "composeServiceName": null,
+    "servicePath": "/workspaces/graphql-serverless-project/my-graphql-lambda",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "my-graphql-serverless",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs20.x",
+        "stage": "dev",
+        "region": "us-east-1",
+        "versionFunctions": true
+      },
+      "functions": {
+        "query": {
+          "handler": "handler.queryHandler",
+          "events": [
+            {
+              "http": {
+                "path": "query",
+                "method": "post"
+              }
+            }
+          ],
+          "name": "my-graphql-serverless-dev-query"
+        },
+        "mutation": {
+          "handler": "handler.mutationHandler",
+          "events": [
+            {
+              "http": {
+                "path": "mutation",
+                "method": "post"
+              }
+            }
+          ],
+          "name": "my-graphql-serverless-dev-mutation"
+        },
+        "subscription": {
+          "handler": "handler.subscriptionHandler",
+          "events": [
+            {
+              "http": {
+                "path": "subscriptions",
+                "method": "post"
+              }
+            }
+          ],
+          "name": "my-graphql-serverless-dev-subscription"
+        }
+      },
+      "plugins": [
+        "serverless-offline"
+      ]
+    },
+    "serviceRawFile": "service: my-graphql-serverless\n\nprovider:\n  name: aws\n  runtime: nodejs20.x\n\nfunctions:\n  query:\n    handler: handler.queryHandler\n    events:\n      - http:\n          path: query\n          method: post\n\n  mutation:\n    handler: handler.mutationHandler\n    events:\n      - http:\n          path: mutation\n          method: post\n\n  subscription:\n    handler: handler.subscriptionHandler\n    events:\n      - http:\n          path: subscriptions\n          method: post\n\nplugins:\n  - serverless-offline\n",
+    "command": [
+      "print"
+    ],
+    "options": {},
+    "error": null,
+    "params": {},
+    "machineId": "309fbbc3b394286d137cef91f12f39bf",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "cf532447-2ae2-4432-a480-4f4a56e47d7d",
+    "orgName": "skiftekhar",
+    "userId": "641nxc3rFNtGcY97dH",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "skiftekhar",
+    "subscription": null,
+    "userEmail": "skiftekhar92@gmail.com",
+    "versionSf": "4.1.22",
+    "serviceProviderAwsCfStackName": "my-graphql-serverless-dev",
+    "integrations": {},
     "serviceProviderAwsCfStackId": null,
     "serviceProviderAwsCfStackCreated": null,
     "serviceProviderAwsCfStackUpdated": null,
