@@ -1,4 +1,4 @@
-service: graphql-serverless
+service: my-graphql-serverless
 
 provider:
   name: aws

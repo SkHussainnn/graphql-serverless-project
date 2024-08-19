@@ -4,3 +4,5 @@ react-graphql-dashboard/node_modules/*
 server/node_modules/*
 graphql-server/node_modules/*
 node_modules
+my-graphql-lambda/node_modules/*
+graphql-serverless-project/node_modules/*
